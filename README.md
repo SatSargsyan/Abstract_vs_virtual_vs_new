@@ -1,1 +1,1 @@
-# Polimorfizm
+# Abstract vs virtual vs new
