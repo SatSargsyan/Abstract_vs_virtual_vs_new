@@ -47,3 +47,9 @@ abstract class C : I
 <a href =http://www.akadia.com/services/dotnet_polymorphism.html>Polymorphism, Method Hiding and Overriding</a>
 
 <a href=https://msdn.microsoft.com/en-us/library/ebca9ah3.aspx>override</a>
+
+<a href=http://rbwhitaker.wikidot.com/c-sharp-abstract-classes>Virtual methods and Overriding</a>
+
+<a href=https://www.codeproject.com/Articles/816448/Virtual-vs-Override-vs-New-Keyword-in-Csharp >Method Hiding and Overriding</a>
+
+
