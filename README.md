@@ -29,13 +29,16 @@ The abstract class A introduces an abstract method F. Class B introduces an addi
 ####An abstract class that implements an interface might map the interface methods onto abstract methods. For example:
 ```C#
 interface I
-        {
-            void M();
-        }
-        abstract class C : I
-        {
-            public abstract void M();
-        }
+{
+   void M();
+}
+abstract class C : I
+{
+  public abstract void M();
+}
 ```
+
+####The<a href=https://msdn.microsoft.com/en-us/library/ms173150.aspx> abstract keyword</a> enables you to create classes and class members that are incomplete and must be implemented in a derived class.
+The sealed keyword enables you to prevent the inheritance of a class or certain class members that were previously marked virtual.
 
 ###It is an error to use the static or virtual modifiers in an abstract method declaration.
