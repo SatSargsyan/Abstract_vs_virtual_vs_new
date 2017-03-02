@@ -39,6 +39,6 @@ abstract class C : I
 ```
 
 ####The<a href=https://msdn.microsoft.com/en-us/library/ms173150.aspx> abstract keyword</a> enables you to create classes and class members that are incomplete and must be implemented in a derived class.
-<a href=https://msdn.microsoft.com/en-us/library/ms173150.aspx> The sealed keyword enables you to prevent the inheritance of a class or certain class members that were previously marked virtual.</a>
+<a href=https://msdn.microsoft.com/en-us/library/ms173150.aspx> The sealed keyword </a>enables you to prevent the inheritance of a class or certain class members that were previously marked virtual.
 
 ###It is an error to use the static or virtual modifiers in an abstract method declaration.
