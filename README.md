@@ -42,3 +42,8 @@ abstract class C : I
 <a href=https://msdn.microsoft.com/en-us/library/ms173150.aspx> The sealed keyword </a>enables you to prevent the inheritance of a class or certain class members that were previously marked virtual.
 
 ###It is an error to use the static or virtual modifiers in an abstract method declaration.
+
+
+<a href =http://www.akadia.com/services/dotnet_polymorphism.html>Polymorphism, Method Hiding and Overriding</a>
+
+<a href=https://msdn.microsoft.com/en-us/library/ebca9ah3.aspx>override</a>
