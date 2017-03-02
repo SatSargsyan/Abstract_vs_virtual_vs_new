@@ -4,8 +4,10 @@ The <a href=https://msdn.microsoft.com/en-us/library/aa645615(v=vs.71).aspx> abs
 <li>An abstract class cannot be instantiated directly, and it is a compile-time error to use the new operator on an abstract class. While it is possible to have variables and values whose compile-time types are abstract, such variables and values will necessarily either be null or contain references to instances of non-abstract classes derived from the abstract types.
 <li>An abstract class is permitted (but not required) to contain abstract members.
 <li>An abstract class cannot be sealed.
+<li>A non-abstract class derived from an<a href =https://msdn.microsoft.com/en-us/library/sf985hc5.aspx> abstract class</a> must include actual implementations of all inherited abstract methods and accessors.
+<li>An abstract class must provide implementation for all interface members.
 </ul>
-When a non-abstract class is derived from an abstract class, the non-abstract class must include actual implementations of all inherited abstract members, thereby overriding those abstract members.
+When a non-abstract class is derived from an abstract class, the non-abstract class must include actual implementations of all inherited abstract members, thereby overriding those abstract members.For example:
 ```C#
 abstract class A
 {
@@ -23,3 +25,17 @@ class C: B
 }
 ```
 The abstract class A introduces an abstract method F. Class B introduces an additional method G, but since it doesn't provide an implementation of F,<b> B must also be declared abstract</b>. Class C overrides F and provides an actual implementation. Since there are no abstract members in C, C is permitted (but not required) to be non-abstract.
+
+####An abstract class that implements an interface might map the interface methods onto abstract methods. For example:
+```C#
+interface I
+        {
+            void M();
+        }
+        abstract class C : I
+        {
+            public abstract void M();
+        }
+```
+
+###It is an error to use the static or virtual modifiers in an abstract method declaration.
